@@ -1,0 +1,731 @@
+
+========================================
+EXECUTANDO: git config --global user.name Mykaelle R.
+========================================
+
+========================================
+EXECUTANDO: git config --global user.email mykaelle.r@aluno.uepb.edu.br
+========================================
+
+========================================
+EXECUTANDO: git config --global core.autocrlf true
+========================================
+
+========================================
+EXECUTANDO: git config --global core.safecrlf true
+========================================
+
+========================================
+EXECUTANDO: git config --global alias.history log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+========================================
+
+========================================
+EXECUTANDO: git init
+========================================
+STDOUT:
+Initialized empty Git repository in C:/VS Code/atv_versionamento/oi20260524.git/.git/
+
+
+========================================
+EXECUTANDO: git checkout -b master
+========================================
+STDERR:
+Switched to a new branch 'master'
+
+
+========================================
+EXECUTANDO: git status
+========================================
+STDOUT:
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	oi.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+========================================
+EXECUTANDO: git add oi.html
+========================================
+
+========================================
+EXECUTANDO: git commit -m Primeiro commit
+========================================
+STDOUT:
+[master (root-commit) 9fc5139] Primeiro commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 oi.html
+
+
+========================================
+EXECUTANDO: git status
+========================================
+STDOUT:
+On branch master
+nothing to commit, working tree clean
+
+
+========================================
+EXECUTANDO: git status
+========================================
+STDOUT:
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   oi.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+========================================
+EXECUTANDO: git add oi.html
+========================================
+
+========================================
+EXECUTANDO: git commit -m Adiciona idioma
+========================================
+STDOUT:
+[master 4e25fb8] Adiciona idioma
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+
+========================================
+EXECUTANDO: git status
+========================================
+STDOUT:
+On branch master
+nothing to commit, working tree clean
+
+
+========================================
+EXECUTANDO: git add oi.html
+========================================
+
+========================================
+EXECUTANDO: git status
+========================================
+STDOUT:
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   oi.html
+
+
+
+========================================
+EXECUTANDO: git status
+========================================
+STDOUT:
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   oi.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   oi.html
+
+
+
+========================================
+EXECUTANDO: git commit -m Adiciona a tag <title>
+========================================
+STDOUT:
+[master c480721] Adiciona a tag <title>
+ 1 file changed, 1 insertion(+)
+
+
+========================================
+EXECUTANDO: git status
+========================================
+STDOUT:
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   oi.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+========================================
+EXECUTANDO: git add .
+========================================
+
+========================================
+EXECUTANDO: git status
+========================================
+STDOUT:
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   oi.html
+
+
+
+========================================
+EXECUTANDO: git commit -m Comenta a tag <title>
+========================================
+STDOUT:
+[master f6b75a0] Comenta a tag <title>
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+
+========================================
+EXECUTANDO: git status
+========================================
+STDOUT:
+On branch master
+nothing to commit, working tree clean
+
+
+========================================
+EXECUTANDO: git log
+========================================
+STDOUT:
+commit f6b75a06834da6829aa413f10b6b515bae071f34
+Author: Mykaelle R. <mykaelle.r@aluno.uepb.edu.br>
+Date:   Sun May 24 21:58:40 2026 -0300
+
+    Comenta a tag <title>
+
+commit c480721af18b0cfc48e2f583217c147705c85db4
+Author: Mykaelle R. <mykaelle.r@aluno.uepb.edu.br>
+Date:   Sun May 24 21:58:39 2026 -0300
+
+    Adiciona a tag <title>
+
+commit 4e25fb8f4831e5afbaadccb593709d83a779e98c
+Author: Mykaelle R. <mykaelle.r@aluno.uepb.edu.br>
+Date:   Sun May 24 21:58:39 2026 -0300
+
+    Adiciona idioma
+
+commit 9fc5139d467d72a4dc12ee00af5c182e7f81e61b
+Author: Mykaelle R. <mykaelle.r@aluno.uepb.edu.br>
+Date:   Sun May 24 21:58:39 2026 -0300
+
+    Primeiro commit
+
+
+========================================
+EXECUTANDO: git log --pretty=oneline
+========================================
+STDOUT:
+f6b75a06834da6829aa413f10b6b515bae071f34 Comenta a tag <title>
+c480721af18b0cfc48e2f583217c147705c85db4 Adiciona a tag <title>
+4e25fb8f4831e5afbaadccb593709d83a779e98c Adiciona idioma
+9fc5139d467d72a4dc12ee00af5c182e7f81e61b Primeiro commit
+
+
+========================================
+EXECUTANDO: git history
+========================================
+STDOUT:
+* f6b75a0 2026-05-24 | Comenta a tag <title> (HEAD -> master) [Mykaelle R.]
+* c480721 2026-05-24 | Adiciona a tag <title> [Mykaelle R.]
+* 4e25fb8 2026-05-24 | Adiciona idioma [Mykaelle R.]
+* 9fc5139 2026-05-24 | Primeiro commit [Mykaelle R.]
+
+========================================
+EXECUTANDO: git checkout 9fc5139
+========================================
+STDERR:
+Note: switching to '9fc5139'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 9fc5139 Primeiro commit
+
+
+========================================
+EXECUTANDO: git status
+========================================
+STDOUT:
+HEAD detached at 9fc5139
+nothing to commit, working tree clean
+
+
+Conteudo de oi.html no commit 9fc5139:
+<html>
+</html>
+
+
+========================================
+EXECUTANDO: git checkout master
+========================================
+STDERR:
+Previous HEAD position was 9fc5139 Primeiro commit
+Switched to branch 'master'
+
+
+Conteudo de oi.html em master:
+<html lang="pt-br">
+<!-- <title>Oi</title> -->
+</html>
+
+
+========================================
+EXECUTANDO: git tag v1
+========================================
+
+========================================
+EXECUTANDO: git checkout v1^
+========================================
+STDERR:
+Note: switching to 'v1^'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at c480721 Adiciona a tag <title>
+
+
+========================================
+EXECUTANDO: git tag v1-beta
+========================================
+
+========================================
+EXECUTANDO: git tag 0.0.0 9fc5139
+========================================
+
+========================================
+EXECUTANDO: git checkout v1
+========================================
+STDERR:
+Previous HEAD position was c480721 Adiciona a tag <title>
+HEAD is now at f6b75a0 Comenta a tag <title>
+
+
+Conteudo de oi.html em v1:
+<html lang="pt-br">
+<!-- <title>Oi</title> -->
+</html>
+
+
+========================================
+EXECUTANDO: git checkout v1-beta
+========================================
+STDERR:
+Previous HEAD position was f6b75a0 Comenta a tag <title>
+HEAD is now at c480721 Adiciona a tag <title>
+
+
+Conteudo de oi.html em v1-beta:
+<html lang="pt-br">
+<title>Oi</title>
+</html>
+
+
+========================================
+EXECUTANDO: git tag
+========================================
+STDOUT:
+0.0.0
+v1
+v1-beta
+
+
+========================================
+EXECUTANDO: git history master --all
+========================================
+STDOUT:
+* f6b75a0 2026-05-24 | Comenta a tag <title> (tag: v1, master) [Mykaelle R.]
+* c480721 2026-05-24 | Adiciona a tag <title> (HEAD, tag: v1-beta) [Mykaelle R.]
+* 4e25fb8 2026-05-24 | Adiciona idioma [Mykaelle R.]
+* 9fc5139 2026-05-24 | Primeiro commit (tag: 0.0.0) [Mykaelle R.]
+
+========================================
+EXECUTANDO: git checkout master
+========================================
+STDERR:
+Previous HEAD position was c480721 Adiciona a tag <title>
+Switched to branch 'master'
+
+
+========================================
+EXECUTANDO: git status
+========================================
+STDOUT:
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   oi.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+========================================
+EXECUTANDO: git checkout oi.html
+========================================
+STDERR:
+Updated 1 path from the index
+
+
+========================================
+EXECUTANDO: git status
+========================================
+STDOUT:
+On branch master
+nothing to commit, working tree clean
+
+
+========================================
+EXECUTANDO: git add oi.html
+========================================
+
+========================================
+EXECUTANDO: git status
+========================================
+STDOUT:
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   oi.html
+
+
+
+========================================
+EXECUTANDO: git restore --staged oi.html
+========================================
+
+========================================
+EXECUTANDO: git status
+========================================
+STDOUT:
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   oi.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+========================================
+EXECUTANDO: git checkout oi.html
+========================================
+STDERR:
+Updated 1 path from the index
+
+
+========================================
+EXECUTANDO: git status
+========================================
+STDOUT:
+On branch master
+nothing to commit, working tree clean
+
+
+========================================
+EXECUTANDO: git commit -a -m Ops, eu errei...
+========================================
+STDOUT:
+[master a7fa687] Ops, eu errei...
+ 1 file changed, 2 insertions(+)
+
+
+========================================
+EXECUTANDO: git revert HEAD --no-edit
+========================================
+STDOUT:
+[master 4beb9d1] Revert "Ops, eu errei..."
+ Date: Sun May 24 21:58:41 2026 -0300
+ 1 file changed, 2 deletions(-)
+
+
+========================================
+EXECUTANDO: git history
+========================================
+STDOUT:
+* 4beb9d1 2026-05-24 | Revert "Ops, eu errei..." (HEAD -> master) [Mykaelle R.]
+* a7fa687 2026-05-24 | Ops, eu errei... [Mykaelle R.]
+* f6b75a0 2026-05-24 | Comenta a tag <title> (tag: v1) [Mykaelle R.]
+* c480721 2026-05-24 | Adiciona a tag <title> (tag: v1-beta) [Mykaelle R.]
+* 4e25fb8 2026-05-24 | Adiciona idioma [Mykaelle R.]
+* 9fc5139 2026-05-24 | Primeiro commit (tag: 0.0.0) [Mykaelle R.]
+
+========================================
+EXECUTANDO: git tag ops
+========================================
+
+========================================
+EXECUTANDO: git reset --hard v1
+========================================
+STDOUT:
+HEAD is now at f6b75a0 Comenta a tag <title>
+
+
+========================================
+EXECUTANDO: git history
+========================================
+STDOUT:
+* f6b75a0 2026-05-24 | Comenta a tag <title> (HEAD -> master, tag: v1) [Mykaelle R.]
+* c480721 2026-05-24 | Adiciona a tag <title> (tag: v1-beta) [Mykaelle R.]
+* 4e25fb8 2026-05-24 | Adiciona idioma [Mykaelle R.]
+* 9fc5139 2026-05-24 | Primeiro commit (tag: 0.0.0) [Mykaelle R.]
+
+========================================
+EXECUTANDO: git history --all
+========================================
+STDOUT:
+* 4beb9d1 2026-05-24 | Revert "Ops, eu errei..." (tag: ops) [Mykaelle R.]
+* a7fa687 2026-05-24 | Ops, eu errei... [Mykaelle R.]
+* f6b75a0 2026-05-24 | Comenta a tag <title> (HEAD -> master, tag: v1) [Mykaelle R.]
+* c480721 2026-05-24 | Adiciona a tag <title> (tag: v1-beta) [Mykaelle R.]
+* 4e25fb8 2026-05-24 | Adiciona idioma [Mykaelle R.]
+* 9fc5139 2026-05-24 | Primeiro commit (tag: 0.0.0) [Mykaelle R.]
+
+========================================
+EXECUTANDO: git tag -d ops
+========================================
+STDOUT:
+Deleted tag 'ops' (was 4beb9d1)
+
+
+========================================
+EXECUTANDO: git history --all
+========================================
+STDOUT:
+* f6b75a0 2026-05-24 | Comenta a tag <title> (HEAD -> master, tag: v1) [Mykaelle R.]
+* c480721 2026-05-24 | Adiciona a tag <title> (tag: v1-beta) [Mykaelle R.]
+* 4e25fb8 2026-05-24 | Adiciona idioma [Mykaelle R.]
+* 9fc5139 2026-05-24 | Primeiro commit (tag: 0.0.0) [Mykaelle R.]
+
+========================================
+EXECUTANDO: git add oi.html
+========================================
+
+========================================
+EXECUTANDO: git commit -m Adiciona o cabeçalho HTML
+========================================
+STDOUT:
+[master d712dfb] Adiciona o cabeçalho HTML
+ 1 file changed, 2 insertions(+)
+
+
+========================================
+EXECUTANDO: git add oi.html
+========================================
+
+========================================
+EXECUTANDO: git commit --amend -m Adiciona o cabeçalho e corpo HTML
+========================================
+STDOUT:
+[master bdfa1de] Adiciona o cabeçalho e corpo HTML
+ Date: Sun May 24 21:58:41 2026 -0300
+ 1 file changed, 5 insertions(+)
+
+
+========================================
+EXECUTANDO: git history
+========================================
+STDOUT:
+* bdfa1de 2026-05-24 | Adiciona o cabeçalho e corpo HTML (HEAD -> master) [Mykaelle R.]
+* f6b75a0 2026-05-24 | Comenta a tag <title> (tag: v1) [Mykaelle R.]
+* c480721 2026-05-24 | Adiciona a tag <title> (tag: v1-beta) [Mykaelle R.]
+* 4e25fb8 2026-05-24 | Adiciona idioma [Mykaelle R.]
+* 9fc5139 2026-05-24 | Primeiro commit (tag: 0.0.0) [Mykaelle R.]
+
+========================================
+EXECUTANDO: git mv oi.html pages
+========================================
+
+========================================
+EXECUTANDO: git status
+========================================
+STDOUT:
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	renamed:    oi.html -> pages/oi.html
+
+
+
+========================================
+EXECUTANDO: git commit -m Move arquivos HTML para a pasta pages
+========================================
+STDOUT:
+[master 233282b] Move arquivos HTML para a pasta pages
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename oi.html => pages/oi.html (100%)
+
+
+========================================
+EXECUTANDO: git add .
+========================================
+
+========================================
+EXECUTANDO: git commit -m Cria pasta e arquivo css para o projeto
+========================================
+STDOUT:
+[master 861f884] Cria pasta e arquivo css para o projeto
+ 1 file changed, 3 insertions(+)
+ create mode 100644 css/oi.css
+
+
+========================================
+EXECUTANDO: git branch estilo
+========================================
+
+========================================
+EXECUTANDO: git checkout estilo
+========================================
+STDERR:
+Switched to branch 'estilo'
+
+
+========================================
+EXECUTANDO: git add .
+========================================
+
+========================================
+EXECUTANDO: git commit -m Cria pasta e arquivo js para o projeto
+========================================
+STDOUT:
+[estilo c77c68e] Cria pasta e arquivo js para o projeto
+ 1 file changed, 1 insertion(+)
+ create mode 100644 js/oi.js
+
+
+========================================
+EXECUTANDO: git add css/oi.css
+========================================
+
+========================================
+EXECUTANDO: git commit -m Adiciona cor ao texto
+========================================
+STDOUT:
+[estilo 47842ef] Adiciona cor ao texto
+ 1 file changed, 1 insertion(+)
+
+
+========================================
+EXECUTANDO: git add .
+========================================
+
+========================================
+EXECUTANDO: git commit -m Linka o arquivo de estilo à página
+========================================
+STDOUT:
+[estilo ac77fcb] Linka o arquivo de estilo à página
+ 1 file changed, 1 insertion(+)
+
+
+========================================
+EXECUTANDO: git checkout master
+========================================
+STDERR:
+Switched to branch 'master'
+
+
+========================================
+EXECUTANDO: git checkout estilo
+========================================
+STDERR:
+Switched to branch 'estilo'
+
+
+========================================
+EXECUTANDO: git checkout master
+========================================
+STDERR:
+Switched to branch 'master'
+
+
+========================================
+EXECUTANDO: git add LEIA-ME.md
+========================================
+
+========================================
+EXECUTANDO: git commit -m Adicionado o arquivo LEIA-ME
+========================================
+STDOUT:
+[master 883b14e] Adicionado o arquivo LEIA-ME
+ 1 file changed, 2 insertions(+)
+ create mode 100644 LEIA-ME.md
+
+
+========================================
+EXECUTANDO: git history --all
+========================================
+STDOUT:
+* ac77fcb 2026-05-24 | Linka o arquivo de estilo à página (estilo) [Mykaelle R.]
+* 47842ef 2026-05-24 | Adiciona cor ao texto [Mykaelle R.]
+* c77c68e 2026-05-24 | Cria pasta e arquivo js para o projeto [Mykaelle R.]
+| * 883b14e 2026-05-24 | Adicionado o arquivo LEIA-ME (HEAD -> master) [Mykaelle R.]
+|/  
+* 861f884 2026-05-24 | Cria pasta e arquivo css para o projeto [Mykaelle R.]
+* 233282b 2026-05-24 | Move arquivos HTML para a pasta pages [Mykaelle R.]
+* bdfa1de 2026-05-24 | Adiciona o cabeçalho e corpo HTML [Mykaelle R.]
+* f6b75a0 2026-05-24 | Comenta a tag <title> (tag: v1) [Mykaelle R.]
+* c480721 2026-05-24 | Adiciona a tag <title> (tag: v1-beta) [Mykaelle R.]
+* 4e25fb8 2026-05-24 | Adiciona idioma [Mykaelle R.]
+* 9fc5139 2026-05-24 | Primeiro commit (tag: 0.0.0) [Mykaelle R.]
+
+========================================
+EXECUTANDO: git merge estilo -m Mescla a ramificação estilo
+========================================
+STDOUT:
+Merge made by the 'ort' strategy.
+ css/oi.css    | 1 +
+ js/oi.js      | 1 +
+ pages/oi.html | 1 +
+ 3 files changed, 3 insertions(+)
+ create mode 100644 js/oi.js
+
+
+========================================
+EXECUTANDO: git history --all
+========================================
+STDOUT:
+*   7e53782 2026-05-24 | Mescla a ramificação estilo (HEAD -> master) [Mykaelle R.]
+|\  
+| * ac77fcb 2026-05-24 | Linka o arquivo de estilo à página (estilo) [Mykaelle R.]
+| * 47842ef 2026-05-24 | Adiciona cor ao texto [Mykaelle R.]
+| * c77c68e 2026-05-24 | Cria pasta e arquivo js para o projeto [Mykaelle R.]
+* | 883b14e 2026-05-24 | Adicionado o arquivo LEIA-ME [Mykaelle R.]
+|/  
+* 861f884 2026-05-24 | Cria pasta e arquivo css para o projeto [Mykaelle R.]
+* 233282b 2026-05-24 | Move arquivos HTML para a pasta pages [Mykaelle R.]
+* bdfa1de 2026-05-24 | Adiciona o cabeçalho e corpo HTML [Mykaelle R.]
+* f6b75a0 2026-05-24 | Comenta a tag <title> (tag: v1) [Mykaelle R.]
+* c480721 2026-05-24 | Adiciona a tag <title> (tag: v1-beta) [Mykaelle R.]
+* 4e25fb8 2026-05-24 | Adiciona idioma [Mykaelle R.]
+* 9fc5139 2026-05-24 | Primeiro commit (tag: 0.0.0) [Mykaelle R.]
+
+========================================
+EXECUTANDO: git remote
+========================================
